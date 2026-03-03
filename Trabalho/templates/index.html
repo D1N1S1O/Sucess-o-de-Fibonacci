@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequência Fibonacci</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='rabit.png') }}">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='rabit.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+<body>
+    <h1>Mês {{mes}}: {{coelhos}} coelhos</h1>
+    <div>
+        <form method="post" action="/avancar">
+            <button type="submit">Avançar 1 mês</button>
+        </form>
+        
+        <form method="post" action="/recuar">
+            <button type="submit">Recuar 1 mês</button>
+        </form>
+
+        <form method="post" action="/voltar">
+            <button type="submit">Recomeçar</button>
+        </form>
+    </div>
+</body>
+</html>
