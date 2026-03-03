@@ -10,6 +10,12 @@
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='favicon.png') }}">
 </head>
 <body>
+<div class="coelhos">
+    {% for i in range(coelhos_visiveis) %}
+        🐰
+    {% endfor %}
+</div>
+<br>
     <h1>Mês {{mes}}: {{coelhos}} coelhos</h1>
     <div>
         <form method="post" action="/avancar">
@@ -24,5 +30,7 @@
             <button type="submit">Recomeçar</button>
         </form>
     </div>
+
+
 </body>
 </html>
