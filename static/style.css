@@ -54,3 +54,30 @@ button:active {
 button:hover {
     background-color: #e68900;
 }
+
+.coelhos {
+    margin-top: 20px;
+    font-size: 28px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+    .coelhos {
+        font-size: 22px;
+        padding: 10px;
+    }
+}
+
+.limite-msg {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    animation: piscar 1s infinite alternate;
+}
+
+@keyframes piscar {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+}
